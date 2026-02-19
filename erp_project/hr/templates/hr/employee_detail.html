@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ employee.name }}</title></head>
+<body>
+  <h1>{{ employee.name }}</h1>
+  <p>Department: {{ employee.department }}</p>
+  <p>Role: {{ employee.job_role }}</p>
+  <p>Monthly Income: {{ employee.monthly_income }}</p>
+  <p>Overtime: {{ employee.overtime }}</p>
+
+  <h2>Attrition Prediction</h2>
+  {% if prediction.error %}
+    <p style="color:red">Error: {{ prediction.error }}</p>
+  {% else %}
+    <p>Risk: <strong>{{ prediction.attrition_risk }}</strong></p>
+    <p>Probability: <strong>{{ prediction.probability }}</strong></p>
+  {% endif %}
+
+  <a href="/hr/">← Back</a>
+</body>
+</html>

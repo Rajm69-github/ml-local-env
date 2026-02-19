@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.pkl
+*.egg-info/
+.env
+miniforge.sh
+.ipynb_checkpoints/
+*.sqlite3
+attrition-predictor/data/
+attrition-predictor/models/
+.DS_Store

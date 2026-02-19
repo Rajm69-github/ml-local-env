@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>HR - Employees</title></head>
+<body>
+  <h1>Employees</h1>
+  <a href="/admin/">Admin</a>
+  <ul>
+    {% for emp in employees %}
+      <li><a href="/hr/{{ emp.pk }}/">{{ emp.name }} — {{ emp.department }}</a></li>
+    {% empty %}
+      <li>No employees yet. Add via <a href="/admin/">admin</a>.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
