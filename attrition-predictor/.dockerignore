@@ -1,0 +1,6 @@
+data/
+mlruns/
+mlflow.db
+notebooks/
+__pycache__/
+*.pyc
